@@ -29,7 +29,29 @@ base: esa información es confidencial y se trabaja solo en la sesión.
    recurrente identificado → G = `PAGO CLIENTE`, H = `-`, I = `-`,
    N = `08 Trasferencia`.
 
+2. **Traslados con el fondo de inversión (Fiducuenta)** desde/hacia
+   #A9076 → N = `08 Trasferencia` (el usuario corrigió el 05 que se usaba antes;
+   algunos egresos al fondo los reclasifica él como provisiones).
+3. **Pagos de tarjeta AMEX desde #A9076** → N = `08 Trasferencia`.
+
+### T.C VISA 9462 (según histórico y correcciones del usuario)
+
+- `FACEBK *...` → G `GASTOS PUBLICIDAS ATENAS`, I `META `, N `06 Gasto publicidad`.
+- `ABONO SUCURSAL VIRTUAL` (pago de la tarjeta, valor negativo) → `INGRESO`,
+  G `PAGO TAJETA DE CREDITO VISA `, I `TRANFERENCIA DE PAGOS `, N `08 Trasferencia`.
+- `OPENAI` → `OPENAI MEMBRESIA` / `12 Gastos administrativos`.
+- `ANTHROPIC` → `GASTO PERSONAL ANTHROPIC` / `09 Dividendos`.
+- Comercios no empresariales (restaurantes, tiendas, apps personales) →
+  G `GASTO PERSONAL <COMERCIO>`, N `09 Dividendos` (marcar como sugerido).
+- Otros abonos/reversos negativos → en blanco y reportar.
+
 ## Reglas generales
+
+- **Antes de generar filas**, descargar la versión más reciente de la base:
+  el ID nuevo es el máximo ID existente + 1, y hay que descartar los
+  movimientos que ya estén anotados (misma cuenta, fecha, tipo y valor).
+  Reportar filas de la base que no aparezcan en el extracto (posibles
+  duplicados) e IDs repetidos.
 
 - No saltarse ningún movimiento: cuadrar cantidad y totales contra el extracto.
 - Lo que no se sepa con certeza se deja en blanco y se reporta con el motivo.
