@@ -1,5 +1,8 @@
 # Movimientos bancarios – reglas de registro
 
+> Contexto general del negocio (qué vende Atenas Store, canales, Lucid Bot):
+> ver `CONTEXTO_EMPRESA.md`. Tenerlo en cuenta en todas las tareas.
+
 Este repositorio guarda solo las reglas para anotar movimientos en la hoja
 "Base de datos" del archivo de movimientos bancarios (Drive). **Nunca** se
 suben aquí extractos, valores, cédulas, nombres de terceros ni filas de la
