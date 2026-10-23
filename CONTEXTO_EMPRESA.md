@@ -22,7 +22,8 @@ cédulas, valores de movimientos ni información confidencial.
   anuncio de origen y el enlace a la conversación).
 - **Medios de pago:** contraentrega, Wompi (electrónico), Addi y Sistecrédito
   (financiado).
-- **Envíos** a todo el país con transportadora; seguimiento de guías por Effi.
+- **Envío gratis** a todo el país con transportadora; seguimiento de guías por
+  Effi. No se prometen tiempos de entrega (varían mucho por municipio).
 - Política de cambios, devoluciones y retracto según la Ley 1480 de 2011
   (retracto: 5 días hábiles después de recibir el producto).
 
